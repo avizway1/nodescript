@@ -62,3 +62,5 @@ node server.js
 ```
 
 **After following these steps, your Node.js server should be up and running.**
+
+**Make sure your ec2 instance security group io opened with required port i.e; 80/3000/any toher port**

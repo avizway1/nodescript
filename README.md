@@ -47,6 +47,8 @@ server.listen(PORT, () => {
 
 ```
 
+this script creates a basic web server that listens on port 80, reads the content of an `index.html` file, and sends it as the response when a request is made to the server. The server logs a message indicating that it is running on `http://localhost:80`.
+
 **STEP 5: INSTALL REQUIRED PACKAGES / INSTALL DEPENDENCIES.**
 
 ```bash

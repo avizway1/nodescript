@@ -21,13 +21,34 @@ npm -v
 
 STEP 4: CREATE A server.js FILE AND RUN IT.
 
-Create a file named `server.js` with the provided content.
+Create a file named `server.js` with the provided the below content.
 
 ```bash
-echo "YOUR_SERVER_JS_CONTENT" > server.js
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+
+const server = http.createServer((req, res) => {
+  const filePath = path.join(__dirname, 'index.html');
+  const stat = fs.statSync(filePath);
+
+  res.writeHead(200, {
+    'Content-Type': 'text/html',
+    'Content-Length': stat.size,
+  });
+
+  const readStream = fs.createReadStream(filePath);
+  readStream.pipe(res);
+});
+
+const PORT = 80;
+server.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
 ```
 
-Replace `YOUR_SERVER_JS_CONTENT` with the content of your `server.js` file.
+
 
 STEP 5: INSTALL REQUIRED PACKAGES / INSTALL DEPENDENCIES.
 

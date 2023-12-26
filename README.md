@@ -1,25 +1,24 @@
-Certainly! Below are the steps in capital letters along with the bash commands for creating an MD5 file:
 
-STEP 1: ADD REQUIRED REPO FROM OFFICIAL NODEJS WEBSITE.
+**STEP 1: ADD REQUIRED REPO FROM OFFICIAL NODEJS WEBSITE.**
 
 ```bash
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 ```
 
-STEP 2: INSTALL NODEJS.
+**STEP 2: INSTALL NODEJS.**
 
 ```bash
 sudo yum install -y nodejs
 ```
 
-STEP 3: VERIFY INSTALLED VERSION.
+**STEP 3: VERIFY INSTALLED VERSION.**
 
 ```bash
 node -v
 npm -v
 ```
 
-STEP 4: CREATE A server.js FILE AND RUN IT.
+**STEP 4: CREATE A server.js FILE AND RUN IT.**
 
 Create a file named `server.js` with the provided the below content.
 
@@ -48,18 +47,16 @@ server.listen(PORT, () => {
 
 ```
 
-
-
-STEP 5: INSTALL REQUIRED PACKAGES / INSTALL DEPENDENCIES.
+**STEP 5: INSTALL REQUIRED PACKAGES / INSTALL DEPENDENCIES.**
 
 ```bash
 npm install
 ```
 
-STEP 6: NODE.JS WILL INTERPRET AND EXECUTE THE CODE IN THE server.js FILE. THIS IS A COMMON PATTERN FOR RUNNING SERVER-SIDE JAVASCRIPT APPLICATIONS.
+**STEP 6: NODE.JS WILL INTERPRET AND EXECUTE THE CODE IN THE server.js FILE. THIS IS A COMMON PATTERN FOR RUNNING SERVER-SIDE JAVASCRIPT APPLICATIONS.**
 
 ```bash
 node server.js
 ```
 
-After following these steps, your Node.js server should be up and running. Make sure to replace `YOUR_SERVER_JS_CONTENT` with the actual content of your `server.js` file.
+**After following these steps, your Node.js server should be up and running.**

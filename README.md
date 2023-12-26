@@ -64,3 +64,51 @@ node server.js
 **After following these steps, your Node.js server should be up and running.**
 
 **Make sure your ec2 instance security group io opened with required port i.e; 80/3000/any toher port**
+
+========================================================================================================================
+
+**PM2 useful Commands**
+
+**Command to install pm2**
+
+```bash
+npm install -g pm2
+```
+
+**list all running processes/apps.**
+
+```bash
+pm2 list   (or) pm ls
+```
+
+**Start app/services with name**
+
+```bash
+pm2 start server.js --name "my-app1"
+```
+
+**Command to list the logs**
+
+```bash
+pm2 logs id/name
+```
+
+ex: pm2
+
+**Command to Monitor the resources**
+
+```bash
+pm2 monit
+```
+
+**To make service as startup**
+
+```bash
+pm2 startup
+```
+
+**Command to delete service/app**
+
+```bash
+pm2 delete name/id
+```
